@@ -4,10 +4,12 @@ import About from "./Pages/About";
 import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Profile from "./Pages/Profile";
+import Navbar from "./Components/Navbar";
 
 export default function() {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
